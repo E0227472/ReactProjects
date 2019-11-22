@@ -8,13 +8,12 @@ class GetRequest extends Component {
   handleSubmitHandler = ()=> {
       console.log("GetRequest Component")
   }
-
   render() {
     return (
       <React.Fragment>
 
 
-        <div className = >
+        <div className = "btn_position_GetRequest" >
         <Button
         label = "Test Button"
         styles = "btn"

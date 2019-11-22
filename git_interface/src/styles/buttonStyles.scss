@@ -5,10 +5,14 @@
   padding: 15px 32px;
 }
 
-@mixin position($margin) {
-  margin: 0px 0px 0px 0px;
+@mixin position($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
 }
 
 .btn {
   @include button-format;
+}
+
+.btn_position_GetRequest {
+  @include position(300px,0 ,0, 600px);
 }
