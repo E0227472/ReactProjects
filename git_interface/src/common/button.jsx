@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import "../styles/buttonStyles.scss";
 
 const Button = (props) => {
     const{onClick, label, styles, disabled} = props;

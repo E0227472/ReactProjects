@@ -2,7 +2,7 @@
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  padding: 15px 32px;
+  padding: 50px 35px;
 }
 
 @mixin position($top, $right, $bottom, $left) {
@@ -14,5 +14,5 @@
 }
 
 .btn_position_GetRequest {
-  @include position(300px,0 ,0, 600px);
+  @include position(300px, 0, 0, 600px);
 }
