@@ -9,10 +9,18 @@
   margin: $top $right $bottom $left;
 }
 
+@mixin input-format($bottom) {
+  margin-bottom: $bottom;
+}
+
 .btn {
   @include button-format;
 }
 
 .btn_position_GetRequest {
   @include position(300px, 0, 0, 600px);
+}
+
+.input {
+  @include input-format(10px);
 }
