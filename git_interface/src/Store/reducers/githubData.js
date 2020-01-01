@@ -11,7 +11,7 @@ const reducer = (state = initialState, action) => {
     case action.SAVE_DATA: {
       return {
         ...state,
-        data: action.value // action.value is the array obtained from github api
+        data: action.value // action.value is the array with objects obtained from github api
       };
     }
 
