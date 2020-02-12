@@ -2,7 +2,6 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {checkProp, findByattribute} from '../test/testUtils';
 import GuessWords from './guessWords';
-import { wrap } from 'module';
 
 const defaultProps = {
     guessWords: [{guessWord: 'Train', letterMatchCount: 3}]
