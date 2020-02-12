@@ -5,7 +5,7 @@ const initialState = {
     guess: false, 
  }
  
- export const reducer = (action, state = initialState) => {
+ export const reducer = (state = initialState, action) => {
     switch(action.type) {
         
         case correctGuess().type: {

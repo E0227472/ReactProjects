@@ -14,15 +14,15 @@ describe ('reducer', () => {
     })
 
     test('returns state of true when action = "CORRECT_GUESS"', () => {
-        expect(reducer(correctGuess(), state)).toEqual({guess: true});
+        expect(reducer(state, correctGuess())).toEqual({guess: true});
     })
 
     test('returns state of false when action = "WRONG_GUESS"', () => {
-        expect(reducer(wrongGuess(), state)).toEqual({guess: false});
+        expect(reducer(state, wrongGuess())).toEqual({guess: false});
     })
 
     test('returns default initial state if no action is passed', () => {
-        expect(reducer({type: ''}, state)).toEqual({guess: false});
+        expect(reducer(state, {type: ''})).toEqual({guess: false});
     })
 
 })
