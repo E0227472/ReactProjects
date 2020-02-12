@@ -19,7 +19,6 @@ class Input extends Component {
             type = "submit">
             submit
             </button>
-            
             </form>
         )
         return (
